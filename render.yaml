@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: project-team-register-api
+    runtime: docker
+    rootDir: backend
+    plan: free
+    healthCheckPath: /api/team-members
+  - type: web
+    name: project-team-register-ui
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false
