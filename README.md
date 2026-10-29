@@ -40,3 +40,4 @@ Free web services sleep when idle, so the first request can take about a minute.
 ## Quick start (Windows)
 Double-click `run.bat`. It checks Java, Maven and Node, installs the frontend packages, starts the backend, waits until it is ready, then starts the frontend and opens http://localhost:5173.
 "# q05-project-team-register" 
+"# q05-project-team-register" 
